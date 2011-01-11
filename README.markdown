@@ -34,7 +34,7 @@ define all your application routes before you call
 
 ## Prophet
 
-These files were originally part of [Prophet](), an auto view
+These files were originally part of [Prophet](https://github.com/DrPheltRight/Prophet), an auto view
 loader, however since I needed to handle errors in another app
 but didn't need Prophet I have since separated the repos.
 
