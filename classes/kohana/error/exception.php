@@ -15,8 +15,8 @@ class Kohana_Error_Exception {
 		if ( ! defined('SUPPRESS_REQUEST'))
 		{
 			$request = array(
-				// Get status from current request
-				'action'  => Request::initial()->response()->status(),
+				// 500 error by default
+				'action'  => 500,
 				
 				// If exception has a message this can be passed on
 				'message' => rawurlencode($e->getMessage()),
@@ -31,7 +31,7 @@ class Kohana_Error_Exception {
 			echo Request::factory(Route::get('kohana_error')->uri($request))
 				->execute()
 				->send_headers()
-				->response;
+				->response();
 		}
 	}
 	
