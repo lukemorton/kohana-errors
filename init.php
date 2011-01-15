@@ -7,7 +7,7 @@ if (Kohana::$errors)
 }
 
 // Error Route for internal error requests
-Route::set('kohana_error', 'prophet_error/<action>(/<message>)', array('action' => '[0-9]{3}', 'message' => '.*'))
+Route::set('kohana_error', 'kohana_error/<action>(/<message>)', array('action' => '[0-9]{3}', 'message' => '.*'))
 	->defaults(array(
 		'controller' => 'error',
 	));
