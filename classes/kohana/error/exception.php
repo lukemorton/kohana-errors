@@ -31,7 +31,7 @@ class Kohana_Error_Exception {
 			echo Request::factory(Route::get('kohana_error')->uri($request))
 				->execute()
 				->send_headers()
-				->response();
+				->body();
 		}
 	}
 	
