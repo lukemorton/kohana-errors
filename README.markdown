@@ -6,6 +6,8 @@ a user friendly error screen.
 
 By default 404 and 500 errors are handled.
 
+**Kohana 3.1 + compatible**
+
 ## Error Handling
 
 When an action or controller cannot be found
